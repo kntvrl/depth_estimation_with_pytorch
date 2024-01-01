@@ -9,7 +9,7 @@ from predictor import DepthEstimationModel
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Depth Estimation using ZoeDepth")
+    parser = argparse.ArgumentParser(description="Depth Estimation using ZoeDepth.")
     parser.add_argument(
         "input_image", help="Path to input image."
     )  # açıklamasını helpini yazıyoruz
@@ -20,9 +20,10 @@ def main():
     result = model.calculate_depthmap(args.input_image, args.output_image)
     print(result)
 
+
 # python cli.py --help deyincede yazdıklarımız help menüsünde güzel bir şekilde görünür.
 
-# kullanımı 
+# kullanımı
 
 # python cli.py test_image.png output_cli.png
 
