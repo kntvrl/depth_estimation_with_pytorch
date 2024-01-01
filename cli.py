@@ -1,8 +1,3 @@
-"""
-Burda modelimizi komut satırından çalıştırmak için gerekli  command line interface hazırlicaz
-dışarıdan yazacağımız input image path ve outhput pathleri tanımlıyoruz
-"""
-
 import argparse
 
 from predictor import DepthEstimationModel
@@ -21,13 +16,5 @@ def main():
     print(result)
 
 
-# python cli.py --help deyincede yazdıklarımız help menüsünde güzel bir şekilde görünür.
-
-# kullanımı
-
-# python cli.py test_image.png output_cli.png
-
-
-# burdaki main fonksiyonu sadece python cli.py deyince otomatik çalışcak biryerde import edilirse otomatik çalışmicak.
 if __name__ == "__main__":
     main()
