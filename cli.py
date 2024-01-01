@@ -1,5 +1,4 @@
 import argparse
-
 from predictor import DepthEstimationModel
 
 

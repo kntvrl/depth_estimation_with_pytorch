@@ -1,8 +1,7 @@
-from fastapi import FastAPI, File, UploadFile
-from predictor import DepthEstimationModel
 import os
 import uuid
-
+from fastapi import FastAPI, File, UploadFile
+from predictor import DepthEstimationModel
 
 app = FastAPI()
 depth_estimator = DepthEstimationModel()

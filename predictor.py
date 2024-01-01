@@ -1,6 +1,5 @@
 import torch
 from PIL import Image
-
 from misc import colorize
 
 
