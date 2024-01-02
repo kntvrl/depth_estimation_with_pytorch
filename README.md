@@ -1,8 +1,7 @@
 
 # Zoe Depth Estimation
 
-A brief description of what this project does and who it's for
-
+Depth estimation with Zoe Depth model using pytorch.
 
 ## Usage/Examples
 
@@ -23,7 +22,7 @@ options:
 ### API Usage
 
 ```
-http://127.0.0.1:8000/predict
+http://127.0.0.1:8041/predict
 ```
 
 
@@ -39,9 +38,7 @@ pip install -r requirements.txt
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
-
-`ANOTHER_API_KEY`
+`IMG_API_KEY`
 
 
 ## Deployment
@@ -49,7 +46,9 @@ To run this project, you will need to add the following environment variables to
 To deploy this project run
 
 ```bash
-  npm run deploy
+docker build -t depth_estimation
+docker run -d -p 8041:8041 depth_estimation
+
 ```
 
 
